@@ -259,7 +259,7 @@ color: black;
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
-.about .row content p {
+.about .row .content p {
   margin-bottom: 0.8rem;
   font-size: 1.3rem;
   font-weight: 100;
@@ -465,8 +465,9 @@ footer .credit a {
   border: 1px solid #666;
   width: 80%;
   animation: animateModal 0.5s;  
+  height: 19rem;
 }
-/* height: 19rem; */
+
 
 /* Modal Animation */
 @keyframes animateModal {
@@ -490,7 +491,7 @@ footer .credit a {
 }
 
 .modal-content img {
-  height: 21rem;
+  height: 16rem;
   margin-right: 2rem;
   margin-bottom: 2rem;
 }
@@ -511,6 +512,12 @@ footer .credit a {
   margin-top: 1rem;
   padding: 1rem 1.6rem;
 }
+.modal .modal-container .modal-content .product-price span {
+  text-decoration: line-through;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
 /* Media Queries */
 
 /* Laptop */
@@ -589,10 +596,11 @@ footer .credit a {
     padding-top: 0;
   }
   .modal-content {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
-
-
+  .modal-container {
+    width: 99%;
+  }
 }
 /* Mobile Phone */
 @media (max-width: 450px) {
